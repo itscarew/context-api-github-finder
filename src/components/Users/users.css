@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-auto-rows: minmax(5rem, 10rem);
+  gap: 0.3rem;
+}
+.wrapper > div {
+  grid-row: span 2;
+  overflow: hidden;
+}
