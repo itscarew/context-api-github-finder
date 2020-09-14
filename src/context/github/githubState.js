@@ -26,11 +26,10 @@ const GithubState = (props) => {
           type: "SET_USERS",
           payload: res.data.items,
         });
+        setLoaded();
       })
       .catch((err) => {
         console.log(err);
-      })
-      .finally(() => {
         setLoaded();
       });
   };
@@ -52,11 +51,10 @@ const GithubState = (props) => {
           type: "SET_ONE_USER",
           payload: res.data,
         });
+        setLoaded();
       })
       .catch((err) => {
         console.log(err);
-      })
-      .finally(() => {
         setLoaded();
       });
   };
@@ -71,11 +69,10 @@ const GithubState = (props) => {
           type: "SET_REPOS",
           payload: res.data,
         });
+        setLoaded();
       })
       .catch((err) => {
         console.log(err);
-      })
-      .finally(() => {
         setLoaded();
       });
   };
